@@ -4,19 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>David Rogers | Elite Math Consultant & Tutor</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="description" content="David Rogers — Elite math consultant and tutor specializing in advanced math, test prep, and personalized tutoring.">
+  <meta name="keywords" content="math tutor, math consultant, ACT tutor, SAT tutor, AP Calculus, private math tutoring">
+  <meta name="author" content="David Rogers">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-<script>
-  document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', e => {
-      e.preventDefault();
-      const target = document.querySelector(link.getAttribute('href'));
-      if(target) {
-        target.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  });
-</script>
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
@@ -30,16 +22,24 @@
       background: linear-gradient(90deg, #284c3b, #2e6b4c);
       color: white;
       padding: 20px 40px;
+      flex-wrap: wrap;
     }
     .logo {
       font-size: 1.5rem;
       font-weight: 700;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
     nav a {
       color: white;
       margin: 0 15px;
       text-decoration: none;
       font-weight: 500;
+      margin: 10px;
+      cursor: pointer;
     }
     .hero {
       display: flex;
@@ -104,6 +104,8 @@
       display: flex;
       justify-content: space-around;
       margin-top: 40px;
+      flex-wrap: wrap;
+      gap: 20px;
     }
     .pillars div {
       background-color: #e8f2ed;
@@ -111,6 +113,7 @@
       border-radius: 10px;
       width: 30%;
       text-align: center;
+      min-width: 250px;
     }
     .cta {
       text-align: center;
@@ -123,6 +126,7 @@
       text-decoration: none;
       font-weight: bold;
       border-radius: 8px;
+      cursor: pointer;
     }
     .contact {
       background-color: #e8f2ed;
@@ -135,6 +139,28 @@
       background-color: #284c3b;
       color: white;
       font-size: 0.9rem;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        padding: 40px 10px;
+      }
+      .hero-text {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+      .pillars {
+        flex-direction: column;
+      }
+      .pillars div {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      nav a {
+        margin: 10px 5px;
+      }
     }
   </style>
 </head>
@@ -154,7 +180,7 @@
       <h1>Master Math with David Rogers — Your Private Path to Excellence</h1>
     </div>
     <div class="hero-img">
-      <img src="images/david.jpg" alt="David Rogers portrait">
+      <img src="images/david.jpg" alt="David Rogers portrait" />
     </div>
   </section>
 
@@ -167,7 +193,11 @@
         </p>
       </div>
       <div>
-        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80" alt="Math concepts" class="about-img">
+        <img
+          src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80"
+          alt="Math concepts"
+          class="about-img"
+        />
       </div>
     </div>
   </section>
@@ -180,7 +210,11 @@
       <li>Curriculum Development & Educational Consulting</li>
       <li>Virtual or In-Person Appointments</li>
     </ul>
-    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1000&q=80" alt="Math tutoring" class="stock-img">
+    <img
+      src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1000&q=80"
+      alt="Math tutoring"
+      class="stock-img"
+    />
   </section>
 
   <section class="section" id="why">
@@ -212,8 +246,21 @@
   </section>
 
   <footer>
-    Website designed by Rev Up Webdesign — Charles Rogers<br>
+    Website designed by Rev Up Webdesign — Charles Rogers<br />
     Powered by HTML + CSS
   </footer>
+
+  <script>
+    // Smooth scrolling for nav links
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
