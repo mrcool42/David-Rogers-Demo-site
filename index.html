@@ -82,16 +82,23 @@
     .section h2 {
       color: #2e6b4c;
     }
+
     .split {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       gap: 40px;
+      align-items: center;
     }
-    .split div {
-      flex: 1;
-      min-width: 280px;
+
+    .zigzag:nth-child(odd) .split {
+      flex-direction: row;
     }
+
+    .zigzag:nth-child(even) .split {
+      flex-direction: row-reverse;
+    }
+
     .about-img {
       width: 100%;
       max-width: 300px;
@@ -164,6 +171,9 @@
       nav a {
         margin: 10px 5px;
       }
+      .split {
+        flex-direction: column !important;
+      }
     }
   </style>
 </head>
@@ -187,7 +197,7 @@
     </div>
   </section>
 
-  <section class="section" id="about">
+  <section class="section zigzag" id="about">
     <div class="split">
       <div>
         <h2>About David</h2>
@@ -205,19 +215,25 @@
     </div>
   </section>
 
-  <section class="section" id="services">
-    <h2>Services</h2>
-    <ul>
-      <li>1-on-1 Tutoring (Algebra to Calculus)</li>
-      <li>Test Prep: ACT, SAT, AP Calculus</li>
-      <li>Curriculum Development & Educational Consulting</li>
-      <li>Virtual or In-Person Appointments</li>
-    </ul>
-    <img
-      src="images/math-tutoring.jpg"
-      alt="Math tutoring"
-      class="stock-img"
-    />
+  <section class="section zigzag" id="services">
+    <div class="split">
+      <div>
+        <h2>Services</h2>
+        <ul>
+          <li>1-on-1 Tutoring (Algebra to Calculus)</li>
+          <li>Test Prep: ACT, SAT, AP Calculus</li>
+          <li>Curriculum Development & Educational Consulting</li>
+          <li>Virtual or In-Person Appointments</li>
+        </ul>
+      </div>
+      <div>
+        <img
+          src="images/math-tutoring.jpg"
+          alt="Math tutoring"
+          class="stock-img"
+        />
+      </div>
+    </div>
   </section>
 
   <section class="section" id="why">
