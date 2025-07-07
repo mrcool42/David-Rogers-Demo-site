@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>David Rogers | Elite Math Consultant & Private Tutoring Expert</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f9f6;
+      color: #1e2b23;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(90deg, #284c3b, #2e6b4c);
+      color: white;
+      padding: 20px 40px;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      padding: 100px 40px;
+      background: url('https://images.unsplash.com/photo-1555967520-37949d0b68f0?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      color: white;
+      animation: fadeIn 1.5s ease-in;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      background-color: rgba(40, 76, 59, 0.85);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+    .hero-images {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .hero-images img {
+      height: 100px;
+      border-radius: 8px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .section {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section:nth-child(even) {
+      background-color: #eaf3ef;
+    }
+    .section h2 {
+      color: #2e6b4c;
+    }
+    .about-img {
+      max-width: 150px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .stock-img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      margin: 30px 0;
+    }
+    .contact {
+      background-color: #e8f2ed;
+      padding: 40px;
+      border-radius: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #284c3b;
+      color: white;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">David Rogers</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Unlock Your Full Potential in Math — Learn with a Proven Expert</h1>
+    </div>
+    <div class="hero-images">
+      <img src="/mnt/data/download.jpg" alt="David Rogers portrait">
+      <img src="https://images.unsplash.com/photo-1531496679791-bdc8b04b1e6d?auto=format&fit=crop&w=400&q=60" alt="Math equations">
+      <img src="https://images.unsplash.com/photo-1581092795360-44aa4dcfa3ed?auto=format&fit=crop&w=400&q=60" alt="Tutoring session">
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About David</h2>
+    <img src="/mnt/data/download.jpg" alt="David Rogers portrait" class="about-img">
+    <p>
+      David Rogers is a professional mathematics consultant and tutor with a degree from the University of Cincinnati. He has years of experience helping students and institutions excel in a range of mathematical subjects, from algebra to advanced calculus. David specializes in both academic tutoring and curriculum consulting for educators and organizations.
+    </p>
+  </section>
+
+  <section class="section" id="services">
+    <h2>Services</h2>
+    <ul>
+      <li>1-on-1 Math Tutoring (Algebra, Geometry, Calculus, Statistics)</li>
+      <li>SAT, ACT, and AP Calculus Test Prep</li>
+      <li>Curriculum Design and Consulting</li>
+      <li>Remote or In-Person Sessions Available</li>
+    </ul>
+    <img src="https://images.unsplash.com/photo-1631515243344-c8ff2efb92a2?auto=format&fit=crop&w=1000&q=80" alt="Math stock" class="stock-img">
+  </section>
+
+  <section class="section contact" id="contact">
+    <h2>Contact David</h2>
+    <p>Email: <a href="mailto:david.rogers.math@gmail.com">david.rogers.math@gmail.com</a></p>
+    <p>Phone: (XXX) XXX-XXXX</p>
+    <p>Available for consultations, tutoring sessions, and school partnerships.</p>
+  </section>
+
+  <footer>
+    Website designed by Rev Up Webdesign — Charles Rogers<br>
+    Powered by HTML + CSS
+  </footer>
+</body>
+</html>
