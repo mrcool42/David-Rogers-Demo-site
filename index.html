@@ -9,6 +9,9 @@
   <meta name="author" content="David Rogers">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
@@ -194,7 +197,7 @@
       </div>
       <div>
         <img
-          src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80"
+          src="images/math-concepts.jpg"
           alt="Math concepts"
           class="about-img"
         />
@@ -211,7 +214,7 @@
       <li>Virtual or In-Person Appointments</li>
     </ul>
     <img
-      src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1000&q=80"
+      src="images/math-tutoring.jpg"
       alt="Math tutoring"
       class="stock-img"
     />
@@ -249,18 +252,5 @@
     Website designed by Rev Up Webdesign — Charles Rogers<br />
     Powered by HTML + CSS
   </footer>
-
-  <script>
-    // Smooth scrolling for nav links
-    document.querySelectorAll('nav a').forEach(link => {
-      link.addEventListener('click', e => {
-        e.preventDefault();
-        const target = document.querySelector(link.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth' });
-        }
-      });
-    });
-  </script>
 </body>
 </html>
