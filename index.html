@@ -31,30 +31,28 @@
       font-weight: 500;
     }
     .hero {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: flex;
+      flex-direction: row;
       align-items: center;
-      padding: 100px 40px;
+      justify-content: center;
+      gap: 40px;
+      padding: 100px 20px;
       background: url('https://images.unsplash.com/photo-1555967520-37949d0b68f0?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
       color: white;
+      text-align: left;
       animation: fadeIn 1.5s ease-in;
     }
     .hero h1 {
       font-size: 2.8rem;
       background-color: rgba(40, 76, 59, 0.85);
-      padding: 20px;
+      padding: 15px 25px;
       border-radius: 12px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     }
-    .hero-images {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    .hero-images img {
-      height: 100px;
-      border-radius: 8px;
+    .hero-img {
+      max-width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
     }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(-20px); }
@@ -64,9 +62,6 @@
       padding: 60px 40px;
       max-width: 1000px;
       margin: auto;
-    }
-    .section:nth-child(even) {
-      background-color: #eaf3ef;
     }
     .section h2 {
       color: #2e6b4c;
@@ -110,16 +105,12 @@
     <div>
       <h1>Unlock Your Full Potential in Math — Learn with a Proven Expert</h1>
     </div>
-    <div class="hero-images">
-      <img src="/mnt/data/download.jpg" alt="David Rogers portrait">
-      <img src="https://images.unsplash.com/photo-1531496679791-bdc8b04b1e6d?auto=format&fit=crop&w=400&q=60" alt="Math equations">
-      <img src="https://images.unsplash.com/photo-1581092795360-44aa4dcfa3ed?auto=format&fit=crop&w=400&q=60" alt="Tutoring session">
-    </div>
+    <img src="david-rogers.jpg" alt="David Rogers" class="hero-img">
   </section>
 
   <section class="section" id="about">
     <h2>About David</h2>
-    <img src="/mnt/data/download.jpg" alt="David Rogers portrait" class="about-img">
+    <img src="david-rogers.jpg" alt="David Rogers portrait" class="about-img">
     <p>
       David Rogers is a professional mathematics consultant and tutor with a degree from the University of Cincinnati. He has years of experience helping students and institutions excel in a range of mathematical subjects, from algebra to advanced calculus. David specializes in both academic tutoring and curriculum consulting for educators and organizations.
     </p>
